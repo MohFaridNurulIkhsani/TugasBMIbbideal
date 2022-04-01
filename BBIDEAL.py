@@ -6,7 +6,7 @@ app = Flask(__name__)
 def bmi():
     duwur = float(request.form.get('duwur'))
     abot = float(request.form.get('abot'))
-    BMI = abot / (duwur/100)**2
+    BMI = abot / (duwur/100)
     msg = "BMI farid adalah " + str(BMI)
     if BMI <= 18.4:
         ket = "Anda Kurus."
